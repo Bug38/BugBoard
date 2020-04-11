@@ -1,0 +1,60 @@
+{
+  "packages":
+  [
+    {
+      "name": "bugboard",
+      "maintainer": "Bug38",
+      "websiteURL": "https://github.com/Bug38",
+      "email" : "Bug38@users.noreply.github.com",
+      "platforms":
+      [
+        {
+          "name": "BugBoard",
+          "architecture": "samd",
+          "version": "0.0.1",
+          "category": "Contributed",
+          "url": "https://github.com/Bug38/BugBoard/raw/master/BugBoard.zip",
+          "archiveFileName": "BugBoard.zip",
+          "checksum": "SHA-256:2eb5683fe1037fee221d43179c05d2fe1b7b2d2c7ba9821221ec27b803cf6a49",
+          "size": "2094185",
+          "boards": [
+            {
+              "name": "BugBoard"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.7.0-arduino3"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino7"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        }
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
