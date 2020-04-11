@@ -11,12 +11,12 @@
         {
           "name": "BugBoard",
           "architecture": "samd",
-          "version": "0.0.1",
+          "version": "0.0.2",
           "category": "Contributed",
-          "url": "https://github.com/Bug38/BugBoard/raw/master/BugBoard.zip",
-          "archiveFileName": "BugBoard.zip",
-          "checksum": "SHA-256:2eb5683fe1037fee221d43179c05d2fe1b7b2d2c7ba9821221ec27b803cf6a49",
-          "size": "2094185",
+          "url": "https://github.com/Bug38/BugBoard/raw/master/BugBoard-0.0.2.zip",
+          "archiveFileName": "BugBoard-0.0.2.zip",
+          "checksum": "SHA-256:e841110502b784425a3806783edf7569f5f50edd13006e5e90e9ed0f8ec7954c",
+          "size": "2099758",
           "boards": [
             {
               "name": "BugBoard"

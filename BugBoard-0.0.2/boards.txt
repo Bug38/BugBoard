@@ -1,0 +1,56 @@
+# Copyright (c) 2014-2015 Arduino LLC.  All right reserved.
+#
+# This library is free software; you can redistribute it and/or
+# modify it under the terms of the GNU Lesser General Public
+# License as published by the Free Software Foundation; either
+# version 2.1 of the License, or (at your option) any later version.
+#
+# This library is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU Lesser General Public License for more details.
+#
+# You should have received a copy of the GNU Lesser General Public
+# License along with this library; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# BugBoard
+# ------------------------------
+BugBoard.name=BugBoard
+BugBoard.vid.0=0x1337
+BugBoard.pid.0=0x0001
+BugBoard.upload.tool=bossac
+BugBoard.upload.protocol=sam-ba
+BugBoard.upload.maximum_size=262144
+BugBoard.upload.offset=0x2000
+BugBoard.upload.use_1200bps_touch=true
+BugBoard.upload.wait_for_upload_port=true
+BugBoard.upload.native_usb=true
+BugBoard.build.mcu=cortex-m0plus
+BugBoard.build.f_cpu=48000000L
+BugBoard.build.usb_product="BugBoard"
+BugBoard.build.usb_manufacturer="Bug38"
+BugBoard.build.board=BugBoard
+BugBoard.build.core=arduino
+BugBoard.build.extra_flags=-DCRYSTALLESS -DARDUINO_SAMD_ZERO -DARM_MATH_CM0PLUS -DROBOTICSMASTERS_ROBOHATMM1_M0 -D__SAMD21G18A__ {build.usb_flags}
+BugBoard.build.ldscript=linker_scripts/gcc/flash_with_bootloader.ld
+BugBoard.build.openocdscript=openocd_scripts/bugboard.cfg
+BugBoard.build.variant=bugboard
+BugBoard.build.variant_system_lib=
+BugBoard.build.vid=0x1337
+BugBoard.build.pid=0x0001
+BugBoard.bootloader.tool=openocd
+BugBoard.bootloader.file=bugboard\bootloader_bugboard.bin
+BugBoard.menu.usbstack.arduino=Arduino
+BugBoard.menu.usbstack.tinyusb=TinyUSB
+BugBoard.menu.usbstack.tinyusb.build.flags.usbstack=-DUSE_TINYUSB
+BugBoard.menu.debug.off=Off
+BugBoard.menu.debug.on=On
+BugBoard.menu.debug.on.build.flags.debug=-g
